@@ -1,6 +1,6 @@
 ## package for send messages in telegram chats
 
-### init
+`Import package`
 ```go
 
 import tgLogMonitoring "github.com/AmadoMuerte/TgLogMonitoring"
