@@ -13,11 +13,11 @@ type Config struct {
 	chatsId  []string
 }
 
-type LogMonitoring struct {
+type New struct {
 	cfg Config
 }
 
-func (l *LogMonitoring) NewLog(message string) {
+func (l *New) Send(message string) {
 	tgUrl := fmt.Sprintf("https://api.telegram.org/bot%s/sendMessage", l.cfg.botToken)
 
 	for _, chatID := range l.cfg.chatsId {
