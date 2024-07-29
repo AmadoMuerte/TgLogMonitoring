@@ -17,10 +17,12 @@ cfg := tgLogMonitoring.Config{
 	},
 }
 
+tgLog := tgLogMonitoring.New{Cfg: cfg}
+
 ```
 `send message`
 ```go
 
-tgLogMonitoring.NewLog(cfg, "Hello world!")
+tgLog.Send("hello world", "My test log")
 
 ```
