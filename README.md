@@ -15,14 +15,17 @@ cfg := tgLogMonitoring.Config{
 		"chat1",
 		"chat2",
 	},
+	DateShow: false,
 }
-
 tgLog := tgLogMonitoring.New{Cfg: cfg}
 
 ```
-`send message`
+`send your log or messsages`
 ```go
 
 tgLog.Send("hello world", "My test log")
+
+sliceInt := []string{"1", "2", "3", "4"}
+tgLog.Send(sliceInt, "My Title")
 
 ```
