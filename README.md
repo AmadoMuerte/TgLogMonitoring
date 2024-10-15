@@ -25,7 +25,7 @@ tgLog := tgLogMonitoring.New{Cfg: cfg}
 
 tgLog.Send("hello world", "My test log")
 
-sliceInt := []string{"1", "2", "3", "4"}
-tgLog.Send(sliceInt, "My Title")
+mySlice := []string{"1", "2", "3", "4"}
+tgLog.Send(mySlice, "My Title")
 
 ```
